@@ -5433,7 +5433,9 @@
     toolbar: {
       type: "object",
       name: "Toolbar",
-      attributes: {},
+      attributes: {
+        children: "auto",
+      },
     },
     toolbar_location: "above",
     children: [],
@@ -5494,7 +5496,9 @@
     toolbar: {
       type: "object",
       name: "Toolbar",
-      attributes: {},
+      attributes: {
+        children: "auto",
+      },
     },
     toolbar_location: "right",
     toolbar_sticky: true,
@@ -6800,6 +6804,15 @@
     visible: true,
     group: true,
   },
+  ToolButton: {
+    __extends__: "UIElement",
+    tool: {
+      type: "symbol",
+      name: "unset",
+    },
+    icon: null,
+    tooltip: null,
+  },
   ToolMenu: {
     __extends__: "Menu",
     toolbar: {
@@ -6816,6 +6829,7 @@
   Toolbar: {
     __extends__: "UIElement",
     tools: [],
+    children: "auto",
     logo: "normal",
     autohide: false,
     group: true,

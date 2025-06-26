@@ -5,4 +5,4 @@
 
 Bokeh version ``3.8.0`` (July 2025) is a minor milestone of Bokeh project.
 
-* Added support for ``SizeBar`` annotation (:bokeh-pull:`14???`)
+* Added support for side panel layouts and ``SizeBar`` annotation (:bokeh-pull:`14487`)
